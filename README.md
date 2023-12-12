@@ -1,0 +1,3 @@
+# Restaurant Dine-In Management System Project
+
+This is a Node.js project that demonstrates the comprehensive management system aimed at simplifying order-taking for waitstaff at tables and online, while optimizing efficiency for hotel and kitchen staff. The project encompassed the creation of a robust database, API development, business logic implementation, and a user-friendly interface. Proficiency in database management, API development, and UI/UX design was demonstrated, all geared towards enhancing the end-to-end order-to-payment process.
