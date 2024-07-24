@@ -1,14 +1,31 @@
 import MenuCard from './MenuCard';
 import "./card.css";
 
+import { useEffect,useRef } from 'react';
+
 const Card = () => {
+  const temp=useRef(null);
+
+  useEffect(() => {
+    const autoScroll = () => {
+      if (temp.current) {
+        temp.current.scrollIntoView();
+      }
+    };
+
+    setTimeout(autoScroll, 150); // Scroll after 1000 milliseconds (1 second)
+
+    return () => clearTimeout(autoScroll); 
+  }, []);
+
+
 
   const whiteText = { color: 'white' };
 
   return (
     <div className="menu-backg">
         <div className='menucard-bg'>
-    <section className="offer_section layout_padding-bottom" style={{marginTop:'3.7rem'}}>
+    <section className="offer_section " style={{marginTop:'3.7rem'}}> {/* layout_padding-bottom*/}
       <div className="container offer_container">
         <h2 className="text-center" >Today's Offers</h2>
         <div className="row">
@@ -46,6 +63,7 @@ const Card = () => {
           </div>
         </div>
       </div>
+      <div ref={temp}></div>
       <h2 className="text-center " style={{marginTop:"50px"}}>Our Menu</h2>
     </section>
     <MenuCard></MenuCard>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team = () => {
   const teamMembers = [
-    { name: "Vivek Gotecha", designation: "Chef" },
+    { name: "Vivek Gotecha", designation: "Dessert Chef" },
     { name: "Sahil Sharma", designation: "Sous Chef" },
     { name: "Vedant Rawat", designation: "Pastry Chef" },
     { name: "Sushil Karpe", designation: "Head Chef" },

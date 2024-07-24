@@ -9,7 +9,8 @@ html{
     transition: transform 0.2s ease-in-out; 
     width: 80%; /* Reduce the card width */
     max-width: 300px; 
-    height:654.2px;
+    /* height:654.2px; */
+    height: 40rem;
     margin: 0 auto; /* Center the card horizontally */
 }
 
@@ -29,7 +30,8 @@ html{
 }
 
 .img-container{
-    height: 300px;
+    /* height: 300px; */
+    height: 18.75rem;
     overflow: hidden;
     border-bottom-left-radius: 30px;
    
@@ -118,7 +120,11 @@ html{
 
 /* Spacing and padding */
 .card-body {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* padding: 20px; */
     border-bottom: 0.6px solid white;
 }
 
